@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetScript", "WindowsSettingsWidget\WidgetScript.csproj", "{9FC7CFF6-5B6D-406D-B7C6-578700A3EBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WidgetUI", "WidgetUI\WidgetUI.csproj", "{5D6539AC-68A3-41B6-9CF9-5E33CE1A5F2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FC7CFF6-5B6D-406D-B7C6-578700A3EBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC7CFF6-5B6D-406D-B7C6-578700A3EBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC7CFF6-5B6D-406D-B7C6-578700A3EBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC7CFF6-5B6D-406D-B7C6-578700A3EBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6539AC-68A3-41B6-9CF9-5E33CE1A5F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6539AC-68A3-41B6-9CF9-5E33CE1A5F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6539AC-68A3-41B6-9CF9-5E33CE1A5F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6539AC-68A3-41B6-9CF9-5E33CE1A5F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\WidgetIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\ControlPanelIcon.png" />
+    <None Remove="Assets\SettingsIcon.jpg" />
+    <None Remove="Assets\WidgetIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\WidgetIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsSettingsWidget\WidgetScript.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\ControlPanelIcon.png" />
+    <Resource Include="Assets\SettingsIcon.jpg" />
+    <Resource Include="Assets\WidgetIcon.ico" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,91 @@
+﻿<Window x:Class="WidgetUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WidgetUI"
+        mc:Ignorable="d"
+        Title="Widget" Height="430" Width="600" ResizeMode="CanResize"
+        Background="BlueViolet"
+        Topmost="False">
+    <Window.ContextMenu>
+        <ContextMenu x:Name="WindowContextMenu">
+            <MenuItem Header="Always on Top" Click="AlwaysOnTopMenuItem_Click" IsChecked="False"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+            <Setter Property="Margin" Value="0,-7,20,0"></Setter>
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="Foreground" Value="Pink"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="ClickMode"  Value="Press"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="20,0,0,0"></Setter>
+            <Setter Property="Foreground" Value="DeepPink"></Setter>
+        </Style>
+        <Style TargetType="Slider">
+            <Setter Property="Maximum" Value="100"></Setter>
+            <Setter Property="Width" Value="250"></Setter>
+            <Setter Property="Height" Value="50"></Setter>
+            <Setter Property="VerticalAlignment" Value="Top"></Setter>
+            <Setter Property="IsSnapToTickEnabled" Value="True"></Setter>
+            <Setter Property="TickFrequency" Value="1"></Setter>
+           
+        </Style>
+        <Style x:Key="Thumb"></Style>
+        
+        
+    </Window.Resources>
+    <Viewbox Stretch="UniformToFill">
+        <Grid Margin="15, 50, 15, 0">
+
+            <!-- Volume Slider -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,350" Width="450">
+                <Label Content="Volume"/>
+                <Slider x:Name="VolumeSlider" ValueChanged="VolumeSlider_ValueChanged" Padding="0,0,0,0"/>
+                <TextBlock x:Name="VolumePercentageText" Text="50%"></TextBlock>
+            </StackPanel>
+
+            <!-- Brightness Slider -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,300" Width="450">
+                <Label Content="Brightness"/>
+                <Slider x:Name="BrightnessSlider" ValueChanged="BrightnessSlider_ValueChanged"/>
+                <TextBlock x:Name="BrightnessPercentageText" Text="50%"/>
+            </StackPanel>
+
+            <!-- Battery Percentage -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,100,0,250" Width="450">
+                <Label Content="Battery" HorizontalAlignment="Left"></Label>
+                <TextBlock x:Name="BatteryPercentageText" Text="50%" Margin="0,0,0,0"></TextBlock>
+            </StackPanel>
+
+            <!-- Settings Button -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 150, 0, 100" Width="450">
+                <Label Content="Settings" HorizontalAlignment="Left"></Label>
+                <Button x:Name="SettingsButton" Height="25" Width="25" VerticalAlignment="Top" Click="SettingsButton_Click">
+                    <Button.Content>
+                        <Image Source="Assets\SettingsIcon.jpg"/>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+
+            <!-- ControlPanel Button -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 200, 0, 100" Width="450">
+                <Label Content="Control Panel" HorizontalAlignment="Left"></Label>
+                <Button x:Name="ControlPanelButton" Height="25" Width="25" VerticalAlignment="Top" Click="ControlPanelButton_Click">
+                    <Button.Content>
+                        <Image Source="Assets\ControlPanelIcon.png"/>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+    </Viewbox>
+    
+</Window>
+    

@@ -72,14 +72,14 @@ namespace WidgetUI
         {
             int percentage = (int)e.NewValue;
             VolumeChanger.SetVolume(percentage);
-            VolumePercentageText.Text = percentage.ToString() + '%';
+            VolumePercentageText.Text = $"{percentage}%";
         }
 
         private void BrightnessSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             int percentage = (int)e.NewValue;
             BrightnessChanger.SetBrightness(percentage);
-            BrightnessPercentageText.Text = percentage.ToString() + '%';
+            BrightnessPercentageText.Text = $"{percentage}%";
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)

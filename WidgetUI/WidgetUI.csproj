@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <None Remove="Assets\ControlPanelIcon.png" />
+    <None Remove="Assets\DownloadsIcon.png" />
+    <None Remove="Assets\FolderIcon.ico" />
     <None Remove="Assets\SettingsIcon.jpg" />
     <None Remove="Assets\WidgetIcon.ico" />
   </ItemGroup>
@@ -25,6 +27,8 @@
 
   <ItemGroup>
     <Resource Include="Assets\ControlPanelIcon.png" />
+    <Resource Include="Assets\DownloadsIcon.png" />
+    <Resource Include="Assets\FolderIcon.ico" />
     <Resource Include="Assets\SettingsIcon.jpg" />
     <Resource Include="Assets\WidgetIcon.ico" />
   </ItemGroup>

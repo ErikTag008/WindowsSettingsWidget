@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WidgetUI"
         mc:Ignorable="d"
-        Title="Widget" Height="430" Width="600" ResizeMode="CanResize"
+        Title="Widget" Height="550" Width="600" ResizeMode="CanResize"
         Background="BlueViolet"
         Topmost="False">
     <Window.ContextMenu>
@@ -41,9 +41,10 @@
         
         
     </Window.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
     <Viewbox Stretch="UniformToFill">
         <Grid Margin="15, 50, 15, 0">
-
+            <Grid.RowDefinitions></Grid.RowDefinitions>
             <!-- Volume Slider -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,350" Width="450">
                 <Label Content="Volume"/>
@@ -84,8 +85,27 @@
                 </Button>
             </StackPanel>
 
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 250, 0, 100" Width="450">
+                <Label Content="App Data" HorizontalAlignment="Left"></Label>
+                <Button x:Name="AppDataButton" Height="25" Width="25" VerticalAlignment="Top" Click="AppDataButton_Click">
+                    <Button.Content>
+                        <Image Source="Assets\FolderIcon.ico"/>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 300, 0, 100" Width="450">
+                <Label Content="Downloads" HorizontalAlignment="Left"></Label>
+                <Button x:Name="DownloadsButton" Height="25" Width="25" VerticalAlignment="Top" Click="DownloadsButton_Click">
+                    <Button.Content>
+                        <Image Source="Assets\DownloadsIcon.png"/>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+
         </Grid>
     </Viewbox>
-    
+</ScrollViewer>
+
 </Window>
     

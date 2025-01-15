@@ -103,6 +103,17 @@ namespace WidgetUI
             }
         }
 
-        
+        private void AppDataButton_Click(object sender, RoutedEventArgs e)
+        {
+            FolderOpener.OpenFolder("{user}\\AppData");
+        }
+
+        private void DownloadsButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(FolderOpener.OpenFolder("{user}\\Downloads") == false)
+            {
+                FolderOpener.OpenFolder("{user}\\Загрузки");
+            }
+        }
     }
 }

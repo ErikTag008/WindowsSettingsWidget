@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\AppSettingsIcon.ico" />
     <None Remove="Assets\ControlPanelIcon.png" />
     <None Remove="Assets\DownloadsIcon.png" />
     <None Remove="Assets\FolderIcon.ico" />
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\AppSettingsIcon.ico" />
     <Resource Include="Assets\ControlPanelIcon.png" />
     <Resource Include="Assets\DownloadsIcon.png" />
     <Resource Include="Assets\FolderIcon.ico" />

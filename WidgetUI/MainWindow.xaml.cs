@@ -41,6 +41,7 @@ namespace WidgetUI
             _cts.Cancel();
             _cts.Dispose();
             this.Closing -= MainWindow_Closing;
+            Loaded -= MainWindow_Loaded;
         }
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -88,7 +89,7 @@ namespace WidgetUI
             {
                 while (!token.IsCancellationRequested)
                 {
-                    var battery = BatteryPercentage.GetBatteryPercentage() - 50;
+                    var battery = BatteryPercentage.GetBatteryPercentage();
                     Dispatcher.Invoke(() =>
                     {
                         BatteryPercentageText.Text = $"{battery}%";
